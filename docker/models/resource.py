@@ -37,7 +37,7 @@ class Model:
         """
         The ID of the object, truncated to 10 characters.
         """
-        return self.id[:10]
+        return self.id[:10] if self.id else self.id
 
     def reload(self):
         """
